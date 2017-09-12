@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'haversine'
+gem 'pr_geohash'
 
 group :development, :test do
   gem "rspec", "~> 3.6", ">= 3.6.0"
