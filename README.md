@@ -8,9 +8,7 @@ what is known as a Z-order curve, and generally space-filling curves.
 
 Image from original repo to demonstrate output:
 
-.. image:: https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor_limited.png
-   :width: 480
-   :height: 320
+![https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash.png]
    
 ## Usage
 
