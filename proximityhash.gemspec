@@ -11,14 +11,23 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Lloyd Watkin"]
-  s.date = "2017-09-12"
+  s.date = "2017-09-13"
   s.description = "Calculates geohashes within a radius from a point"
   s.email = "lloyd@olieox.com"
   s.extra_rdoc_files = [
     "README.md"
   ]
   s.files = [
-    "VERSION"
+    ".travis.yml",
+    "Gemfile",
+    "LICENCE",
+    "README.md",
+    "Rakefile",
+    "VERSION",
+    "lib/proximityhash.rb",
+    "proximityhash.gemspec",
+    "spec/proximityhash_spec.rb",
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/olioex/proximityhash"
   s.licenses = ["Apache 2.0"]
@@ -30,17 +39,20 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<haversine>, [">= 0"])
+      s.add_runtime_dependency(%q<pr_geohash>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 3.6.0", "~> 3.6"])
       s.add_development_dependency(%q<bundler>, [">= 1.3.0"])
       s.add_development_dependency(%q<jeweler>, [">= 1.8.6"])
     else
       s.add_dependency(%q<haversine>, [">= 0"])
+      s.add_dependency(%q<pr_geohash>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 3.6.0", "~> 3.6"])
       s.add_dependency(%q<bundler>, [">= 1.3.0"])
       s.add_dependency(%q<jeweler>, [">= 1.8.6"])
     end
   else
     s.add_dependency(%q<haversine>, [">= 0"])
+    s.add_dependency(%q<pr_geohash>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 3.6.0", "~> 3.6"])
     s.add_dependency(%q<bundler>, [">= 1.3.0"])
     s.add_dependency(%q<jeweler>, [">= 1.8.6"])
