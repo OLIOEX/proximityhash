@@ -7,7 +7,6 @@ spatial data structure which subdivides space into buckets of grid shape, which 
 what is known as a Z-order curve, and generally space-filling curves.
 
 Image from original repo to demonstrate output:
-
 ![proximityhash demo image](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash.png)
    
 ## Usage
